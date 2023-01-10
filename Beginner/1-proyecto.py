@@ -1,48 +1,49 @@
-# #Funcion print
+#Funcion print
 
-# print("Day 1 - Python Print Function")
-# print("The function is declared like this: ")
-# print("print('what to print')")
+print("Day 1 - Python Print Function")
+print("The function is declared like this: ")
+print("print('what to print')")
 
-# #aqui se explica un simbolo que separa en parrafos
-# print("Hello world!\nHello World!")
-# print("¿Hola como estas querido amigo?\nestoy practicando en python y esto es genial")
+#aqui se explica un simbolo que separa en parrafos
+print("Hello world!\nHello World!")
+print("¿Hola como estas querido amigo?\nestoy practicando en python y esto es genial")
 
-# #concatenamos con simbolo +
-# print("Hello" + " " + "Arley")
+#concatenamos con simbolo +
+print("Hello" + " " + "Arley")
 
-# #Corregir el siguiente codigo
-# print(Day 1 - String Manipulation")
-# print('e.g. print("Hello " + "world")')
-# print(("New Line can be created with a backlash and n.")
-# #respuesta
-# print("Day 1 - String Manipulation")
-# print("e.g. print('Hello ' + 'world')")
-# print("New Line can be created with a backlash and n.")
+#Corregir el siguiente codigo
+    # print(Day 1 - String Manipulation")
+    # print('e.g. print("Hello " + "world")')
+    # print(("New Line can be created with a backlash and n.")
 
-# #funcion input
-# input("What is your name? ")
-# print( "Hello " + input("What is your name? ") )
+#respuesta
+print("Day 1 - String Manipulation")
+print("e.g. print('Hello ' + 'world')")
+print("New Line can be created with a backlash and n.")
 
-# #ejercicio para calcular la longitud de la cadena en el input
-# print( len( input("What is your name? ") ) )
+#funcion input
+input("What is your name? ")
+print( "Hello " + input("What is your name? ") )
 
-# # variables
-# name = input("What is your name: ")
-# print( name )
+#ejercicio para calcular la longitud de la cadena en el input
+print( len( input("What is your name? ") ) )
 
-# name = input("What is your name? ")
-# length = len(name)
-# print(length)
+# variables
+name = input("What is your name: ")
+print( name )
 
-# #otro ejercicio cambiando valores de variables
-# a = input("a: ")
-# b = input("b: ")
-# c = a
-# a = b
-# b = c
-# print("a: " + a)
-# print("b: " + b)
+name = input("What is your name? ")
+length = len(name)
+print(length)
+
+#otro ejercicio cambiando valores de variables
+a = input("a: ")
+b = input("b: ")
+c = a
+a = b
+b = c
+print("a: " + a)
+print("b: " + b)
 
 
 """
