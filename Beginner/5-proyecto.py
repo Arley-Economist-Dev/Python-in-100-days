@@ -1,3 +1,18 @@
+#Seccion de ciclos
+
+#Ciclo for
+
+#sintaxis
+#for item in list_of_item:
+    #do something
+
+fruits = ["apple", "peach", "pear"]
+
+for fruit in fruits:
+    print(fruit)
+    print(fruit + " pie")
+
+#Challenge de codigo 1 - Average of heights
 student_heights = input("Input a list of student heights ").split()
 
 for n in range(0, len(student_heights)):
