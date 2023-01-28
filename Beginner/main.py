@@ -1,22 +1,36 @@
-student_heights = input("Input a list of student heights ").split()
+#Password Generator
 
-for n in range(0, len(student_heights)):
-    student_heights[n] = int(student_heights[n])
+#dependencias
+import random
 
-print(student_heights)
+#data
+letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+simbolos = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-# student_heights = [156, 124, 165, 173, 189, 169, 146]
+#Inicio
+print("Bienvenido al generador de contraseñas!")
+length = int ( input("Cuantas Letras te gustaria tener en la contraseña: \n") )
+symbols = int ( input("Cuantos simbolos le gustaria tener?:\n ") )
+numbers = int ( input("Cuantos numeros le gustaria tener?:\n ") )
 
-#se genera un contador al que se le ira sumando los valores de cada elemento de la lista
-#esta es la forma de sumar con un for
-heights = 0
-for h in student_heights:
-    heights += h
+#variable que almacena resultado
+resultado = ""
 
-#se genera un contador en cero y se le va añadiendo 1 por cada iteraccion a la lista
-#esto es el equivalente a len pero con ciclos for
-count = 0
-for h in student_heights:
-    count += 1
+#ciclos para seleccionar valores aleatorios de cada lista de datos
+for i in range(1, length + 1):
+    resultado += random.choice(letras)
 
-print ( f"El promedio de altura es { round( heights/count, 2 ) }" )
+for i in range(1, symbols + 1):
+    resultado += random.choice(simbolos)
+
+for i in range(1, numbers + 1):
+    resultado += random.choice(numeros)
+
+#usando el metodo shuffle para bajar una lista que recibe el resultado de los ciclos
+l = list(resultado)
+random.shuffle(l)
+result = ''.join(l)
+
+#imprime la contraseña
+print(result)
